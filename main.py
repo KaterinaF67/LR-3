@@ -15,7 +15,6 @@ from src.model import solve_instance, save_short_log
 from src.verify import verify_solution, save_verification
 from src.heuristic import greedy_assign
 from src.plots import plot_assignment, plot_scenarios, plot_scaling, plot_bigm, plot_formulations
-from src.reporting import make_report
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
@@ -239,7 +238,6 @@ def main():
     }
     (RESULTS / "run_info.json").write_text(json.dumps(run_info, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    make_report(ROOT)
     print(f"Variant: {VARIANT}; seed: {SEED}")
     print(f"LP relaxation: {lp.objective:.3f}")
     print(f"MILP: {milp_out.objective:.3f}; gap={gap:.3f}%")
@@ -247,7 +245,6 @@ def main():
     print(f"Deficit: {deficit.objective:.3f}; active={', '.join(sorted(active_set(deficit.servers)))}")
     print(f"Stress: {stress.objective:.3f}; active={', '.join(sorted(active_set(stress.servers)))}")
     print(f"Greedy: {greedy_obj:.3f}; gap={greedy_summary['gap_pct']:.3f}%")
-    print("Report source generated: report.tex")
 
 if __name__ == "__main__":
     main()

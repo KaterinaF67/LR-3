@@ -1,0 +1,5 @@
+formulation,mode,objective,gap_pct,time_s,n_constraints,mip_nodes
+aggregate,LP relaxation,133.531964286,35.109357427,0.001349707,40,0
+aggregate,MILP,205.780000000,0.000000000,0.709455125,40,31
+disaggregated,LP relaxation,162.537337461,21.014025920,0.002944204,160,0
+disaggregated,MILP,205.780000000,0.000000000,1.120380600,160,51

@@ -1,0 +1,4 @@
+scenario,status,objective,delta_vs_base,active_servers
+base,optimal,205.780000000,0.000000000,"S3, S5, S7, S8"
+deficit,optimal,207.040000000,1.260000000,"S3, S4, S5, S8"
+stress,optimal,210.390000000,4.610000000,"S3, S4, S5, S8"

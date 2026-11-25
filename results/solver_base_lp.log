@@ -1,0 +1,12 @@
+formulation=aggregate
+relax=True
+m_factor=1.0
+scipy_version=1.17.0
+highs_version=1.8.0
+status=0
+success=True
+message=Optimization terminated successfully. (HiGHS Status 7: Optimal)
+objective=133.53196428571428
+mip_gap=None
+mip_node_count=None
+elapsed_s=0.002494425

@@ -1,0 +1,64 @@
+Running HiGHS 1.8.0 (git hash: 222cce7): Copyright (c) 2024 HiGHS under MIT licence terms
+Coefficient ranges:
+  Matrix [1e+00, 8e+00]
+  Cost   [3e+00, 4e+01]
+  Bound  [1e+00, 1e+00]
+  RHS    [1e+00, 4e+01]
+Presolving model
+160 rows, 128 cols, 736 nonzeros  0s
+160 rows, 128 cols, 736 nonzeros  0s
+Objective function is integral with scale 100
+
+Solving MIP model with:
+   160 rows
+   128 cols (128 binary, 0 integer, 0 implied int., 0 continuous)
+   736 nonzeros
+MIP-Timing:      0.0011 - starting analytic centre calculation
+
+Src: B => Branching; C => Central rounding; F => Feasibility pump; H => Heuristic; L => Sub-MIP;
+     P => Empty MIP; R => Randomized rounding; S => Solve LP; T => Evaluate node; U => Unbounded;
+     z => Trivial zero; l => Trivial lower; u => Trivial upper; p => Trivial point
+
+        Nodes      |    B&B Tree     |            Objective Bounds              |  Dynamic Constraints |       Work      
+Src  Proc. InQueue |  Leaves   Expl. | BestBound       BestSol              Gap |   Cuts   InLp Confl. | LpIters     Time
+
+         0       0         0   0.00%   0               inf                  inf        0      0      0         0     0.0s
+         0       0         0   0.00%   162.5373375     inf                  inf        0      0     11       123     0.0s
+ C       0       0         0   0.00%   166.9496435     252.11            33.78%      426      5    108       211     0.0s
+ L       0       0         0   0.00%   172.8311684     209.93            17.67%     2343     21    108       659     0.3s
+ B      15       1         5   3.12%   172.8311684     205.78            16.01%     2365     13    267     11079     0.7s
+        51       0        25 100.00%   205.78          205.78             0.00%     2747     25   1050     24903     1.1s
+
+Solving report
+  Status            Optimal
+  Primal bound      205.78
+  Dual bound        205.78
+  Gap               0% (tolerance: 1e-05%)
+  P-D integral      0.212841169021
+  Solution status   feasible
+                    205.78 (objective)
+                    0 (bound viol.)
+                    9.29936019381e-14 (int. viol.)
+                    0 (row viol.)
+  Timing            1.11 (total)
+                    0.00 (presolve)
+                    0.00 (solve)
+                    0.00 (postsolve)
+  Max sub-MIP depth 3
+  Nodes             51
+  Repair LPs        0 (0 feasible; 0 iterations)
+  LP iterations     24903 (total)
+                    19647 (strong br.)
+                    664 (separation)
+                    2603 (heuristics)
+
+--- SciPy/HiGHS result summary ---
+formulation=disaggregated
+relaxation=False
+n_constraints=160
+success=True
+status=0
+message=Optimization terminated successfully. (HiGHS Status 7: Optimal)
+objective=205.78000000000006
+mip_gap=0.0
+mip_node_count=51

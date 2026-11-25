@@ -1,0 +1,14 @@
+{
+  "tolerance": 1e-07,
+  "task_assignment_violation": 0.0,
+  "cpu_violation": 0.0,
+  "ram_violation": 0.0,
+  "linking_violation": 0.0,
+  "individual_link_violation": 0.0,
+  "active_server_violation": 0.0,
+  "bound_violation": 0.0,
+  "integrality_violation": 0.0,
+  "objective_recomputed": 205.78,
+  "objective_difference": 5.684341886080802e-14,
+  "feasible": true
+}

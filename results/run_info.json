@@ -1,0 +1,20 @@
+{
+  "python": "3.13.5",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "scipy": "1.17.0",
+  "highs": "1.8.0",
+  "variant": 19,
+  "seed": 10125,
+  "base_lp_objective": 133.53196428571428,
+  "base_milp_objective": 205.78000000000029,
+  "integrality_gap_pct": 35.10935742748853,
+  "mip_gap": 0.0,
+  "mip_node_count": 31,
+  "deficit_server": "S5",
+  "stress_servers": [
+    "S5",
+    "S7"
+  ]
+}
